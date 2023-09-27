@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-dark-blue);
+  background-color: var(--background-light);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+select,
+button {
+  color: var(--text-dark-blue);
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.link {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 500;
+
+  &_h1 {
+    font-size: 8.8rem;
+    letter-spacing: 0.25rem;
+    line-height: 104%;
+  }
+
+  &_h2 {
+    font-size: 6.4rem;
+    letter-spacing: 0.16rem;
+    line-height: 115%;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  border-radius: 10px;
+  font-weight: 700;
+
+  &_primary {
+    background: var(--text-coral);
+  }
+
+  &_secondary {
+    background: var(--text-dark-blue);
+  }
+}
+
+.text {
+  letter-spacing: 0.1rem;
+}
+
+.paper {
+  padding: 0 2rem;
+  background: var(--text-white);
+  border-radius: 24px;
+  box-shadow: 0px 0px 12px 0px rgba(52, 53, 70, 0.05),
+    0px 0px 3px 0px rgba(34, 43, 85, 0.03);
+}

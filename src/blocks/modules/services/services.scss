@@ -1,0 +1,113 @@
+.services {
+  margin-bottom: 2.4rem;
+
+  &__content {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 12rem 0 11.5rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 3.3rem;
+  }
+
+  &__btn {
+    width: 16.5rem;
+    height: 5.4rem;
+    margin: 0 auto 6.4rem;
+    gap: 6px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(max(8), 1fr);
+    grid-auto-flow: dense;
+    gap: 2.4rem;
+  }
+
+  &__card {
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 24px;
+    line-height: 1.3;
+
+    &_s {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      grid-column: span 2;
+      max-width: 19.5rem;
+      height: 19.5rem;
+      border: 1px solid rgb(0 4 46 / 25%);
+      padding: 3.2rem;
+      text-align: center;
+    }
+
+    &_m {
+      grid-column: span 3;
+      max-width: 30.4rem;
+      height: 19.5rem;
+      padding: 3.2rem;
+    }
+
+    &_l {
+      grid-column: span 3;
+      grid-row: span 2;
+      max-width: 30.4rem;
+      height: 41.3rem;
+      padding: 3.2rem 3.8rem;
+    }
+
+    &_1 {
+      background-color: #f1f0f6;
+      background-image: url("/img/bg-card-1.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 80%;
+    }
+
+    &_3 {
+      background-color: #f1f0f6;
+      font-size: 2.2rem;
+      text-align: center;
+      background-image: url("/img/bg-card-3.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+    }
+
+    &_4 {
+      background-image: url("/img/bg-card-4.png");
+      background-repeat: no-repeat;
+      background-position: center 10px;
+      justify-content: flex-end;
+    }
+
+    &_5 {
+      background-color: var(--text-coral);
+      color: var(--text-white);
+      background-image: url("/img/bg-card-5.png");
+      background-repeat: no-repeat;
+      background-position: 88% bottom;
+      background-size: 37%;
+    }
+  }
+
+  &__card-3-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__card-3-description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

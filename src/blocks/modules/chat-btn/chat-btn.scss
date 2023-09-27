@@ -1,0 +1,13 @@
+.chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: var(--text-coral);
+  border-radius: 50%;
+  cursor: pointer;
+}

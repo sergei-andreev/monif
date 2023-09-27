@@ -1,0 +1,102 @@
+.footer {
+  padding: 6rem 0 12rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 4rem;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__logo {
+    margin-bottom: 3.9rem;
+  }
+
+  &__payments-methods {
+    margin-bottom: 2rem;
+  }
+
+  &__solaris {
+    margin-top: auto;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(4, 18rem);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8rem 2.4rem;
+  }
+
+  &__nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-top: auto;
+  }
+
+  &__nav-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
+  &__nav-link {
+    font-size: 14px;
+  }
+
+  &__nav-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 14px;
+    color: var(--text-gray);
+  }
+}
+
+.store-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: 14rem;
+    height: 4rem;
+    border: 2px solid var(--text-black-20);
+    padding: 0 1.6rem;
+    gap: 0.6rem;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.payments-methods {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+
+.legal-notice {
+  display: flex;
+  gap: 2.4rem;
+  opacity: 0.6;
+
+  &__item {
+    font-size: 14px;
+  }
+}
