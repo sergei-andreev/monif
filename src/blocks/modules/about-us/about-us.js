@@ -1,5 +1,6 @@
 import Swiper from "swiper";
 import { Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
 
 const workers = [
   { name: "Olivier Binet", img: "Olivier" },
