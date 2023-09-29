@@ -7,7 +7,14 @@
   bottom: 2rem;
   width: 4.8rem;
   height: 4.8rem;
-  background: var(--text-coral);
+  background: $color-coral;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1000;
+
+  &:hover {
+    .chat-btn__icon {
+      animation: moving 2s linear infinite;
+    }
+  }
 }

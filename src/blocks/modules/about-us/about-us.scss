@@ -8,7 +8,7 @@
   &__title {
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--text-coral);
+    color: $color-coral;
     text-transform: uppercase;
     margin-bottom: 2.6rem;
   }
@@ -54,7 +54,7 @@
     flex-direction: column;
     gap: 1.2rem;
     padding: 3.2rem 4rem;
-    background: var(--background-light);
+    background: $bg-light;
     border-radius: 16px;
     height: fit-content;
   }

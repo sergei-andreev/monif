@@ -19,7 +19,7 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
     renderBullet: function (index, className) {
       return `<div class="${className}">
-        <img src="./img/workers/${workers[index].img}.png" alt="" />
+        <img src="./img/workers/${workers[index].img}.png" alt="${workers[index].name}" />
         <p class="about-us__bullet-name">${workers[index].name}</p>
       </div>`;
     },

@@ -17,13 +17,14 @@ li {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
-  color: var(--text-dark-blue);
-  background-color: var(--background-light);
+  color: $color-dark-blue;
+  background-color: $bg-light;
 }
 
 img {
@@ -38,11 +39,12 @@ a {
 a,
 select,
 button {
-  color: var(--text-dark-blue);
+  color: $color-dark-blue;
   font-family: "DM Sans", sans-serif;
 }
 
 .container {
+  position: relative;
   max-width: 140rem;
   margin: 0 auto;
   padding: 0 2rem;
@@ -50,7 +52,18 @@ button {
 
 .link {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-blue;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
 }
 
 .title {
@@ -73,16 +86,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-white);
+  color: $color-white;
   border-radius: 10px;
   font-weight: 700;
 
   &_primary {
-    background: var(--text-coral);
+    background: $color-coral;
   }
 
   &_secondary {
-    background: var(--text-dark-blue);
+    background: $color-dark-blue;
   }
 }
 
@@ -92,7 +105,7 @@ button {
 
 .paper {
   padding: 0 2rem;
-  background: var(--text-white);
+  background: $color-white;
   border-radius: 24px;
   box-shadow: 0px 0px 12px 0px rgba(52, 53, 70, 0.05),
     0px 0px 3px 0px rgba(34, 43, 85, 0.03);

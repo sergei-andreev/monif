@@ -13,7 +13,7 @@
 
   &__link, &__menu-link {
     border-radius: 10px;
-    color: var(--text-white);
+    color: $color-white;
   }
 
   &__link {
@@ -21,8 +21,14 @@
     align-items: center;
     height: 4.8rem;
     padding: 1.4rem 2.4rem;
-    background: var(--bg-menu);
+    background: $bg-menu;
     backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: brightness(2.5);
+      transform: scale(102%);
+    }
 
     &_logo {
       padding: 2.4rem;
@@ -57,7 +63,7 @@
       height: 1px;
       transform: translateX(-50%);
       transition: 0.3s ease-out;
-      background-color: var(--text-white);
+      background-color: $color-white;
       opacity: 0;
     }
 
@@ -73,7 +79,7 @@
 
   &__item {
     display: flex;
-    background: var(--bg-menu);
+    background: $bg-menu;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     gap: 1.6rem;

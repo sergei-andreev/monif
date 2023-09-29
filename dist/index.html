@@ -100,17 +100,16 @@
     <section class="first-screen">
   <div class="container">
     <header class="header header_dark">
-    <div class="first-screen__logo">
-        <div class="logo">
+  <div class="first-screen__logo"><div class="main-logo">
   <a href="/">
-    <img src="./img/icons/logo.svg" alt="logo" />
+    <img class="main-logo__img" src="./img/icons/logo.svg" alt="logo" />
+    <img class="main-logo__back-img" src="./img/icons/logo.svg" alt="logo" />
   </a>
 </div>
+</div>
 
-    </div>
-
-    <div class="header__actions">
-      <div class="lang-selector">
+  <div class="header__actions">
+    <div class="lang-selector">
   <div class="lang-selector__current">
     DE
   </div>
@@ -121,9 +120,12 @@
   </ul>
 </div>
 
-      <a href="#" class="header__link link">Sign in</a>
-    </div>
-  </header>
+    <a href="https://www.google.com" class="header__link link" target="_blank"
+      >Sign in</a
+    >
+  </div>
+</header>
+
 
     <div class="first-screen__content">
       <h1 class="first-screen__title title title_h1">
@@ -136,9 +138,35 @@
         Registration
       </p>
 
-      <a href="#" class="first-screen__button button button_primary">Try now</a>
+      <a
+        href="https://www.google.com"
+        class="first-screen__button button button_primary"
+        target="_blank"
+        >Try now</a
+      >
     </div>
   </div>
+
+  <img
+    class="bg-image bg-image_bottom"
+    src="./img/app-bottom.png"
+    alt="background image"
+  />
+  <img
+    class="bg-image bg-image_center"
+    src="./img/app-center.png"
+    alt="background image"
+  />
+  <img
+    class="bg-image bg-image_left"
+    src="./img/app-left.png"
+    alt="background image"
+  />
+  <img
+    class="bg-image bg-image_right"
+    src="./img/app-right.png"
+    alt="background image"
+  />
 
   <nav class="nav">
   <a href="#" class="nav__link nav__link_logo"></a>
@@ -154,21 +182,23 @@
 
     <ul class="nav__menu">
       <li>
-        <a href="#" class="nav__menu-link">Get IBAN</a>
+        <a href="#about-us" class="nav__menu-link">Get IBAN</a>
       </li>
       <li>
-        <a href="#" class="nav__menu-link">Pay</a>
+        <a href="#about-us" class="nav__menu-link">Pay</a>
       </li>
       <li>
-        <a href="#" class="nav__menu-link">Get Paid</a>
+        <a href="#about-us" class="nav__menu-link">Get Paid</a>
       </li>
       <li>
-        <a href="#" class="nav__menu-link">Manage Finances</a>
+        <a href="#about-us" class="nav__menu-link">Manage Finances</a>
       </li>
     </ul>
   </div>
 
-  <a href="#" class="nav__link">Open account</a>
+  <a href="https://www.google.com" class="nav__link" target="_blank"
+    >Open account</a
+  >
 </nav>
  <div class="chat-btn">
   <img class="chat-btn__icon" src="./img/icons/chat.svg" alt="chat" />
@@ -189,7 +219,7 @@
         </p>
 
         <a href="#" class="button button_secondary services__btn"
-          >Learn more<img src="./img/icons/arrow.svg"
+          >Learn more<img class="services__btn-img" src="./img/icons/arrow.svg"
         /></a>
 
         <div class="services__cards">
@@ -237,7 +267,7 @@
   </div>
 </section>
 
-    <div class="about-us">
+    <section class="about-us" id="about-us">
   <div class="container">
     <div class="paper">
       <div class="about-us__content">
@@ -357,7 +387,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
     <footer class="footer">
   <div class="container">
@@ -365,9 +395,10 @@
       <div class="footer__row">
         <div class="footer__col">
           <div class="footer__logo">
-            <div class="logo">
+            <div class="main-logo">
   <a href="/">
-    <img src="./img/icons/logo.svg" alt="logo" />
+    <img class="main-logo__img" src="./img/icons/logo.svg" alt="logo" />
+    <img class="main-logo__back-img" src="./img/icons/logo.svg" alt="logo" />
   </a>
 </div>
 
@@ -390,31 +421,31 @@
           <div class="footer__nav">
             <div class="footer__nav-column">
               <h3 class="footer__nav-title">Products</h3>
-              <a href="#" class="footer__nav-link">Banking</a>
-              <a href="#" class="footer__nav-link">Cards</a>
-              <a href="#" class="footer__nav-link">Invoicing</a>
-              <a href="#" class="footer__nav-link">Multi-banking</a>
+              <a href="#" class="link">Banking</a>
+              <a href="#" class="link">Cards</a>
+              <a href="#" class="link">Invoicing</a>
+              <a href="#" class="link">Multi-banking</a>
             </div>
             <div class="footer__nav-column">
               <h3 class="footer__nav-title"></h3>
-              <a href="#" class="footer__nav-link">Expense management</a>
-              <a href="#" class="footer__nav-link">Apple Pay</a>
-              <a href="#" class="footer__nav-link">Cashback</a>
-              <a href="#" class="footer__nav-link">Launch your business</a>
+              <a href="#" class="link">Expense management</a>
+              <a href="#" class="link">Apple Pay</a>
+              <a href="#" class="link">Cashback</a>
+              <a href="#" class="link">Launch your business</a>
             </div>
             <div class="footer__nav-column">
               <h3 class="footer__nav-title">Help</h3>
-              <a href="#" class="footer__nav-link">FAQ</a>
-              <a href="#" class="footer__nav-link">Contact us</a>
-              <a href="#" class="footer__nav-link">Legal documents</a>
-              <a href="#" class="footer__nav-link">Help center</a>
+              <a href="#" class="link">FAQ</a>
+              <a href="#" class="link">Contact us</a>
+              <a href="#" class="link">Legal documents</a>
+              <a href="#" class="link">Help center</a>
             </div>
             <div class="footer__nav-column">
               <h3 class="footer__nav-title">Company</h3>
-              <a href="#" class="footer__nav-link">About us</a>
-              <a href="#" class="footer__nav-link">Partners </a>
-              <a href="#" class="footer__nav-link">Press</a>
-              <a href="#" class="footer__nav-link">Research</a>
+              <a href="#" class="link">About us</a>
+              <a href="#" class="link">Partners </a>
+              <a href="#" class="link">Press</a>
+              <a href="#" class="link">Research</a>
             </div>
 
             <div class="footer__nav-block">
@@ -442,35 +473,35 @@
 
         <div class="footer__col">
           <div class="store-links">
-            <a href="#" class="store-links__link">
+            <a href="https://play.google.com/" class="store-links__link" target="_blank">
               <img
                 src="./img/icons/google-play.svg"
-                alt=""
-                class="store-links__img"
+                alt="google play icon"
+                class="store-links__icon"
               />
               <p class="store-links__label">Google Play</p>
             </a>
-            <a href="#" class="store-links__link">
+            <a href="https://www.apple.com/app-store/" class="store-links__link" target="_blank">
               <img
                 src="./img/icons/apple.svg"
-                alt=""
-                class="store-links__img"
+                alt="app store icon"
+                class="store-links__icon"
               />
               App Store</a
             >
-            <a href="#" class="store-links__link">
+            <a href="https://appgallery.huawei.com/" class="store-links__link" target="_blank">
               <img
                 src="./img/icons/app-gallery.svg"
-                alt=""
-                class="store-links__img"
+                alt="app gallery icon"
+                class="store-links__icon"
               />
               App Gallery</a
             >
-            <a href="#" class="store-links__link">
+            <a href="https://www.samsung.com/us/apps/galaxy-store/" class="store-links__link" target="_blank">
               <img
                 src="./img/icons/galaxy-store.svg"
-                alt=""
-                class="store-links__img"
+                alt="galaxy store icon"
+                class="store-links__icon"
               />
               Galaxy Store</a
             >
@@ -489,15 +520,15 @@
 
           <div class="legal-notice">
             <p class="legal-notice__item">@ 2023 FINOM</p>
-            <a href="#" class="legal-notice__item">Terms & Conditions</a>
-            <a href="#" class="legal-notice__item">Privacy Policy</a>
-            <a href="#" class="legal-notice__item">Cookie Policy</a>
-            <a href="#" class="legal-notice__item">Imprint</a>
+            <a href="#" class="legal-notice__item link">Terms & Conditions</a>
+            <a href="#" class="legal-notice__item link">Privacy Policy</a>
+            <a href="#" class="legal-notice__item link">Cookie Policy</a>
+            <a href="#" class="legal-notice__item link">Imprint</a>
           </div>
         </div>
 
         <div class="footer__solaris">
-          <img src="./img/solaris.png" alt="" />
+          <img src="./img/icons/payments.svg" alt="payments icon" />
         </div>
       </div>
     </div>

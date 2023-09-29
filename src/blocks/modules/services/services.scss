@@ -22,6 +22,15 @@
     height: 5.4rem;
     margin: 0 auto 6.4rem;
     gap: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-coral;
+
+      & .services__btn-img {
+        animation: moveRightAndComeLeft 1s ease forwards;
+      }
+    }
   }
 
   &__cards {
@@ -91,8 +100,8 @@
     }
 
     &_5 {
-      background-color: var(--text-coral);
-      color: var(--text-white);
+      background-color: $color-coral;
+      color: $color-white;
       background-image: url("../img/bg-card-5.png");
       background-repeat: no-repeat;
       background-position: 88% bottom;

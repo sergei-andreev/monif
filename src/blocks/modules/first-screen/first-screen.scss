@@ -1,8 +1,9 @@
 .first-screen {
+  position: relative;
   height: 100vh;
   background:
-    url("../img/first-screen-bg.png") no-repeat center
-    center/cover;
+    url("../img/platform.png") no-repeat center bottom,
+    url("../img/line.png") no-repeat center center/cover;
 
   &__content {
     display: flex;
@@ -22,5 +23,53 @@
   &__button {
     width: 20rem;
     height: 6rem;
+    transition: all 0.3s ease;
+    animation: moveInBottom 0.5s ease-out 2s;
+    animation-fill-mode: backwards;
+
+    &:hover {
+      background-color: darken(#ff4c5c, 5%);
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      background-color: #ff4c5c;
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.bg-image {
+  position: absolute;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &_center {
+    animation: moveRightMoveLeft 8s linear infinite;
+    left: 45.7%;
+    bottom: 8.5%;
+  }
+
+  &_right {
+    animation: moveRightMoveLeft 12s linear infinite;
+    left: 58.6%;
+    bottom: 0%;
+  }
+
+  &_left {
+    animation: moveRightMoveLeft 10s linear infinite;
+    right: 54.6%;
+    bottom: 4.5%;
+  }
+
+  &_bottom {
+    animation: moveRightMoveLeft 8s linear infinite;
+    right: 48.7%;
+    bottom: 1px;
   }
 }

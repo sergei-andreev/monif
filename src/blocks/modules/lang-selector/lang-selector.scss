@@ -41,8 +41,8 @@
     transition: 0.1s;
 
     &:hover {
-      color: var(--text-white);
-      background-color: var(--text-coral);
+      color: $color-white;
+      background-color: $color-coral;
       border-radius: 4px;
     }
   }
